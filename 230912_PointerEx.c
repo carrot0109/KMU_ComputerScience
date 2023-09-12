@@ -28,5 +28,18 @@ int main() {
 	printf("value of *b_ptr is %lf\n", *b_ptr);
 	printf("value of *c_ptr is %c\n", *c_ptr);
 
+	///////////////////////////////////////////////////////////////////////
+	printf("\n\n");
+	
+	printf("value of *&a is %d\n", *&a);	// a의 주소에 저장된 값
+	printf("value of *&b is %lf\n", *&b);
+	printf("value of *&c is %c\n", *&c);
+
+	printf("\n\n");
+
+	printf("address of a_ptr is %p\n", &a_ptr);	// a_ptr의 주소값
+	printf("address of b_ptr is %p\n", &b_ptr);
+	printf("address of c_ptr is %p\n", &c_ptr);
+
 	return 0;
 }
