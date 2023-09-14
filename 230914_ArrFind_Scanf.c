@@ -23,8 +23,7 @@ void TestFunc() {
 	for (int i = 0; i < 10; i++) {
 		arr3[i] = arr1[i] + arr2[i];
 	}
-
-	printf("\n\n");
+	printf("\n");
 
 	for (int i = 0; i < 10; i++) {
 		printf("arr3[%d]의 값 : %d\n", i,arr3[i]);
@@ -40,6 +39,7 @@ void TestFunc() {
 		if (arr3[i] > Max)
 			Max = arr3[i];
 	}
+	
 	printf("최소: %d\n최대: %d", Min, Max);
 
 }
