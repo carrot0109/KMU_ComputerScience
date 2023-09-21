@@ -15,19 +15,19 @@ void test_func() {
 	printf("**arr	= %d\n", **arr);	// 시작 주소의 값 : 1
 	printf("\n");
 
-	printf("arr + 0 = %p\n", arr + 0);	// 0번째 행열 시작 주소 : 012FFB9C
-	printf("arr + 1 = %p\n", arr + 1);	// 1번째 행열 시작 주소 : 012FFBAC
-	printf("arr + 2 = %p\n", arr + 2);	// 2번째 행열 시작 주소 : 012FFBBC
+	printf("arr + 0 = %p\n", arr + 0);	// 0번째 행 시작 주소 : 012FFB9C
+	printf("arr + 1 = %p\n", arr + 1);	// 1번째 행 시작 주소 : 012FFBAC
+	printf("arr + 2 = %p\n", arr + 2);	// 2번째 행 시작 주소 : 012FFBBC
 	printf("\n");
 
-	printf("*(arr + 0) = %p\n", *(arr + 0));	// 0번째 행열 시작 주소 : 012FFB9C
-	printf("*(arr + 1) = %p\n", *(arr + 1));	// 1번째 행열 시작 주소 : 012FFBAC
-	printf("*(arr + 2) = %p\n", *(arr + 2));	// 2번째 행열 시작 주소 : 012FFBBC
+	printf("*(arr + 0) = %p\n", *(arr + 0));	// 0번째 행 시작 주소 : 012FFB9C
+	printf("*(arr + 1) = %p\n", *(arr + 1));	// 1번째 행 시작 주소 : 012FFBAC
+	printf("*(arr + 2) = %p\n", *(arr + 2));	// 2번째 행 시작 주소 : 012FFBBC
 	printf("\n");
 
-	printf("*(arr) + 0 = %p\n", *(arr) + 0);	// 012FFB9C
-	printf("*(arr) + 1 = %p\n", *(arr) + 1);	// 012FFBA0
-	printf("*(arr) + 2 = %p\n", *(arr) + 2);	// 012FFBA4
+	printf("*(arr) + 0 = %p\n", *(arr) + 0);	// 0번째 행 0번째 열 주소 (arr[0] + 0) : 012FFB9C
+	printf("*(arr) + 1 = %p\n", *(arr) + 1);	// 0번째 행 1번째 열 주소 (arr[0] + 1) : 012FFBA0
+	printf("*(arr) + 2 = %p\n", *(arr) + 2);	// 0번째 행 2번째 열 주소 (arr[0] + 2) : 012FFBA4
 }
 
 int main() {
