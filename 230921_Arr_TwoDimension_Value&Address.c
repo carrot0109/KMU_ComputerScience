@@ -10,15 +10,15 @@ void test_func() {
 		{21,22,23,24}
 	};
 	printf("##### 부분배열표현 표현 #####\n\n");
-	printf("arr[0] = %p\n",arr[0]);		// 0번째 행열 시작 주소 : 00B5FD84
-	printf("arr[1] = %p\n", arr[1]);	// 1번째 행열 시작 주소 : 00B5FD94
-	printf("arr[2] = %p\n", arr[2]);	// 2번째 행열 시작 주소 : 00B5FDA4
+	printf("arr[0] = %p\n",arr[0]);		// 0번째 행 시작 주소 : 00B5FD84
+	printf("arr[1] = %p\n", arr[1]);	// 1번째 행 시작 주소 : 00B5FD94
+	printf("arr[2] = %p\n", arr[2]);	// 2번째 행 시작 주소 : 00B5FDA4
 	printf("\n");	
 
-	printf("arr[0] + 0 = %p\n", arr[0] + 0);	// 0번째 행열의 0번째 열 주소 : 00B5FD84
-	printf("arr[0] + 1 = %p\n", arr[0] + 1);	// 0번째 행열의 1번째 열 주소 : 00B5FD88
-	printf("arr[0] + 2 = %p\n", arr[0] + 2);	// 0번째 행열의 2번째 열 주소 : 00B5FD8C
-	printf("arr[0] + 3 = %p\n", arr[0] + 3);	// 0번째 행열의 3번째 열 주소 : 00B5FD90
+	printf("arr[0] + 0 = %p\n", arr[0] + 0);	// 0번째 행의 0번째 열 주소 : 00B5FD84
+	printf("arr[0] + 1 = %p\n", arr[0] + 1);	// 0번째 행의 1번째 열 주소 : 00B5FD88
+	printf("arr[0] + 2 = %p\n", arr[0] + 2);	// 0번째 행의 2번째 열 주소 : 00B5FD8C
+	printf("arr[0] + 3 = %p\n", arr[0] + 3);	// 0번째 행의 3번째 열 주소 : 00B5FD90
 	printf("\n");
 
 	printf("*(arr[0] + 0) = %d\n", *(arr[0] + 0));	// (0,0)의 값 : 1
