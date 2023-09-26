@@ -19,7 +19,8 @@ void test_func2() {
 	int a = 0;
 	double b = 3.2;
 
-	a = (int)b;
+	// a = b; --> warning 발생
+	a = (int)b;	// 형변환 필요
 	printf("int 자료형 : %d\n", a);
 }
 
