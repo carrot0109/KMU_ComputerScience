@@ -1,53 +1,53 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include <stdio.h>
+#include <stdio.h> 
+#include <string.h>
 #include <stdlib.h>
 #include <time.h>
 
-void RandomGen(int* arr, int size) {
-    srand(time(NULL));
-    for (int i = 0; i < size; i++) {
-        arr[i] = rand() % 100 + 1; // 랜덤한 값을 할당
-    }
+void random_gen(int* data, int size) {
+	int i;
+	srand(time(NULL));
+
+	for (i = 0; i < size; i++) {
+		data[i] = rand() % 100;
+	}
 }
 
-void printArray(int* arr, int size) {
-    for (int i = 0; i < size; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+void print_arr(int data[], int size) {
+	for (int i = 0; i < size; i++) {
+		printf("%d \n", data[i]);
+	}
 }
 
-int getSum(int* arr, int size) {
-    int sum = 0;
-    for (int i = 0; i < size; i++) {
-        sum += arr[i];
-    }
-    return sum;
+int get_sum(int data[], int size) {
+	int sum = 0;
+	for (int i = 0; i < size; i++) {
+		sum += data[i];
+	}
+	return sum;
 }
 
 int main() {
-    int size;
+	int num_data = 0;	// 배열의 수
+	int* ptr;
+	int sum = 0;
 
-    printf("정수 배열의 크기를 입력하세요: ");
-    scanf("%d", &size);
+	printf("입력받을 정수의 개수는? ");
+	scanf("%d", &num_data);
 
-    int* arr = (int*)calloc(size, sizeof(int));
+	ptr = (int*)calloc(num_data, sizeof(int));	// 메모리 동적할당
 
-    if (arr == NULL) {
-        printf("메모리 할당 오류\n");  // 오류체크
-        return 1;
-    }
+	if (ptr == NULL) {
+		printf("memory error");
+		return 0;
+	}
 
-    RandomGen(arr, size);
+	random_gen(ptr, num_data);
+	print_arr(ptr, num_data);
+	sum = get_sum(ptr, num_data);
 
-    printf("배열의 값: ");
-    printArray(arr, size);
+	printf("\n\n총합 : %d", sum);
 
-    int sum = getSum(arr, size);
-    printf("배열의 합: %d\n", sum);
-
-    free(arr);
-
-    return 0;
+	return 0;
 }
