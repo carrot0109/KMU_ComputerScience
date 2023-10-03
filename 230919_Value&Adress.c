@@ -13,7 +13,7 @@ int test_func() {
 	printf("%d\n", *(&data));	// data의 주소에 담겨져 있는 값			: 5
 	printf("%p\n", ptr);		// ptr이 시작되는 ptr[0]의 주소값		: 0096F9B4
 	printf("%d\n", *ptr);		// ptr이 가리키는 주소에 담겨져 있는 값 		: 5
-	printf("%p\n", &ptr);		// 열 ptr 자체의 주소값			: 0096F9A8
+	printf("%p\n", &ptr);		// 배열 ptr 자체의 주소값			: 0096F9A8
 }
 
 int main() {
