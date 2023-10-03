@@ -8,12 +8,12 @@ int test_func() {
 	int data = 5;
 	int* ptr = &data;
 
-	printf("%d\n", data);		// data의 저장된 값						: 5
-	printf("%p\n", &data);		// data의 주소							: 0096F9B4
+	printf("%d\n", data);		// data의 저장된 값				: 5
+	printf("%p\n", &data);		// data의 주소					: 0096F9B4
 	printf("%d\n", *(&data));	// data의 주소에 담겨져 있는 값			: 5
 	printf("%p\n", ptr);		// data의 주소를 담고 있는 ptr의 값		: 0096F9B4
-	printf("%d\n", *ptr);		// ptr이 가리키는 주소에 담겨져 있는 값 : 5
-	printf("%p\n", &ptr);		// 포인터 변수 ptr의 주소				: 0096F9A8
+	printf("%d\n", *ptr);		// ptr이 가리키는 주소에 담겨져 있는 값 		: 5
+	printf("%p\n", &ptr);		// 포인터 변수 ptr의 주소			: 0096F9A8
 }
 
 int main() {
