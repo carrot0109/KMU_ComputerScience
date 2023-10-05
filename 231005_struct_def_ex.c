@@ -16,10 +16,10 @@ void test_func() {
 	Student s1 = { "유재석",2003030,"기계공학과",40 };
 	Student s2 = { "박명수",2005010,"컴퓨터공학과",50 };
 
-	printf("%s\n", s1.name);		printf("%s\n", s2.name);
-	printf("%d\n", s1.ID);			printf("%d\n", s2.ID);
-	printf("%s\n", s1.major);		printf("%s\n", s2.major);
-	printf("%d\n", s1.age);			printf("%d\n", s2.age);
+	printf("%s\n", s1.name);	printf("%s\n", s2.name);	// 멤버 참조 연산자 (.)를 이용해서 구조체에 있는 값에 접근
+	printf("%d\n", s1.ID);		printf("%d\n", s2.ID);
+	printf("%s\n", s1.major);	printf("%s\n", s2.major);
+	printf("%d\n", s1.age);		printf("%d\n", s2.age);
 }
 
 int main() {
