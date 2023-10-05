@@ -24,7 +24,7 @@ void test_func() {
 	printf("\n학생 1 나이 입력 : \n");
 	scanf("%d", &(s1.pf.age));
 	printf("\n학생 1 키 입력 : \n");
-	scanf("%s", &(s1.pf.height));
+	scanf("%d", &(s1.pf.height));
 	printf("\n학생 1 ID 입력 : \n");
 	scanf("%d", &s1.ID);
 	printf("\n학생 1 성적 입력 : \n");
