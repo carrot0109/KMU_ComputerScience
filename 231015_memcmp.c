@@ -11,7 +11,7 @@ void ex_func() {
 
 	int result = 0;
 
-	result = memcmp(str1, str2, sizeof(char) * 20);
+	result = memcmp(str1, str2, sizeof(char) * 20);		// Size to compare
 	if (result == 0)
 		printf("same memory");
 	else
