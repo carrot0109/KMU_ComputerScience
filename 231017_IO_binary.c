@@ -40,10 +40,9 @@ void test_func() {
 	fscanf(fp1, "%d", &num);
 	fwrite(&num, sizeof(num), 1, fp2);
 	printf("%d\n", num);
-
-	char str; 
+ 
 	num = 0;
-	fread(&num, sizeof(str), 1, fp2);
+	fread(&num, sizeof(num), 1, fp2);
 	printf("%d\n", num);
 
 	fclose(fp1);	fclose(fp2);
