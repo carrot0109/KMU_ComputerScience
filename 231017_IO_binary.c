@@ -43,8 +43,8 @@ void test_func() {
 
 	char str; 
 	num = 0;
-	fread(&str, sizeof(str), 1, fp2);
-	printf("%c\n", str);
+	fread(&num, sizeof(str), 1, fp2);
+	printf("%c\n", num);
 
 	fclose(fp1);	fclose(fp2);
 }
