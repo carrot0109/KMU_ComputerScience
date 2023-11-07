@@ -12,9 +12,10 @@ typedef struct Node {
 
 node* head = NULL;
 
-void Add_node_front() {
+void Add_node_front(int i,int num) {
 	node* newNode;
 	newNode = (node*)malloc(1 * sizeof(node));
+	printf("input a value of %dth node : ",num-i);
 	scanf("%d", &newNode->value);
 	newNode->next = NULL;
 	if (head == NULL) {
@@ -36,8 +37,11 @@ void display() {
 }
 
 int main() {
-	for (int i = 0; i < 5; i++) {
-		Add_node_front();	
+	int num;
+	printf("how much you make node?\n");
+	scanf("%d", &num);
+	for (int i = 0; i < num; i++) {
+		Add_node_front(i,num);	
 	}
 	display();
 	return;
