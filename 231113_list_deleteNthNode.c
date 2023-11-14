@@ -78,10 +78,10 @@ int del_Node_Kth(int k)
 
 	count = getNodeCount_ver_1(); //노드의 개수를 구해 리턴하는 함수
 
-	if (k < 1 || k > count + 1)
+	if (k < 1 || k > count)
 	{
 		printf("\n#### [%d]번째 노드는 삭제 할 수 없는 위치 입니다.####\n", k);
-		printf("\n#### 1 ~ %d번째 노드까지 삭제할 수 있습니다.####\n", count + 1);
+		printf("\n#### 1 ~ %d번째 노드까지 삭제할 수 있습니다.####\n", count);
 		return 0; //삭제 실패
 	}
 
