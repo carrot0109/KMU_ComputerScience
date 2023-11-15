@@ -6,7 +6,7 @@
 #include <memory.h>
 #include <assert.h>
 
-#define STACK_SIZE 100
+#define STACK_SIZE 10
 
 typedef int element;
 
